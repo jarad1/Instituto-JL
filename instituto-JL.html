@@ -4,46 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
-    <style>
-        h1 {
-            background-color: blueviolet;
-            text-align: center;
-            color: rgb(248, 248, 248);
-        }
-        h2 {
-            color: rgb(176, 206, 206);
-            
-        }
-        div {
-            display: flex;
-
-        }
-        p {
-            color: rgb(162, 0, 255);
-            margin-left: 5px;
-        }
-        body {
-            width: 100vw;
-            display: flex;
-            flex-flow: column;
-
-        }
-        footer {
-            background: #000000;
-            align-self: inherit;
-            position: sticky;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="./css/instituto-JL.css">
 
     
 </head>
 <body>
-    <h1>Escola do JL</h1>
+    <header>
+        <h1>Instituto JL</h1>
+    </header>
+
+    <div class="container">
+        <div class="principal">
+            <img src="./img/Professor.png" width="70" alt="">
+            <p>Óla professor, Bem vindo ao portal aqui você encontrada o resultado por aluno e as informações adjuntas sobre ele e poderá adicionar um comentário sobre ele para que outros professores possam ver</p>
+        </div>
+        <div class="mensage" >
+            <h1>resultado</h1>
+            <h2 id="texto"></h2>
+        </div>
+        <div id="boneci">
+            <img src="./img/alunos.jpg" width="300px"alt="">
+            <div id="infos" >
+                <h1>Aluno:</h1>
+                <p id="nome"></p><br>
+                <h1>Faltou:</h1>
+                <p id="quant" ></p><br>
+                <h1>Teve nota</h1>
+                <p id="nota"></p>
+                <form action="">
+                    <input type="text" placeholder="Comentarios">
+                </form>
+            </div>
+            <div id="dados">
+                <ol type="I">
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        
+
+    </div>
     
     
    
     
-    <script src="./js/ifelse-operadores-logicos.js"></script>
+    <script src="./js/instituto-JL.js"></script>
 
     <footer>
         <div> <p>São:  </p><p id="demo"></p> </div>

@@ -1,0 +1,84 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #286DAE;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+li {
+    display: inline;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+li + li a {
+    margin-left: 10px;
+}
+
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+}
+
+.img {
+    margin-top: 115px;
+    display: flex;
+    width: 80vw;
+    padding: 20px;
+}
+
+.img + .img {
+    margin-top: 30px;
+}
+
+p {
+    display: inline;
+    width: 55vw;
+    color: white;
+    margin-left: 20px;
+}
+img {
+    display: flex;
+    padding: 15px;
+    background: url(../img/fundo-caixa.png);
+}
+
+div.portal {
+    background: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1025px;
+}
+
+div.portal a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 2em;
+    color: #286DAE;
+    text-align: center;
+}
+
+
+.container {
+    background: #76B1E9;
+}
+

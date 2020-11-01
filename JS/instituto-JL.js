@@ -15,17 +15,13 @@ if (turma  == 'xt') {
     var nomeAluno = prompt('Digite o código do aluno: ')
     if (nomeAluno == 'xt11'  ) {
         nomeAluno =xt11 
-    }
-    if (nomeAluno == 'xt12'  ) {
+    } else if (nomeAluno == 'xt12'  ) {
         nomeAluno =xt12
-    }
-    if (nomeAluno == 'xt13'  ) {
+    }else if (nomeAluno == 'xt13'  ) {
         nomeAluno =xt13 
-    }
-    if (nomeAluno == 'xt14'  ) {
+    }else if (nomeAluno == 'xt14'  ) {
         nomeAluno =xt14 
-    }
-    if (nomeAluno == 'xt15'  ) {
+    }else if (nomeAluno == 'xt15'  ) {
         nomeAluno =xt15 
     }
 
@@ -43,23 +39,28 @@ if (turma  == 'xt') {
             
             var faltas = prompt('Digite o número de faltas de '+ nomeAluno +': ');
         }
+
+        document.getElementById('nome').textContent = nomeAluno;
+        document.getElementById('quant').textContent = faltas + (' dias' );
+        document.getElementById('nota').textContent = nota;
     
         if (nota >= media && faltas <= faltasMaximas ) {
 
-            document.write('<h2>Que bom que '+ nomeAluno +' foi aprovado</h2>')
+            
+            document.getElementById('texto').textContent = ('Que bom que '+ nomeAluno +' foi aprovado');
 
         } else if(faltas > faltasMaximas && nota >= media) {
 
-           document.write('<h2>Infelizmente '+ nomeAluno +' foi reprovado por '+ faltas +' faltas</h2>')
+            document.getElementById('texto').textContent =('Infelizmente '+ nomeAluno +' foi reprovado por '+ faltas +' faltas')
 
-        }else if(nota < media && faltas <= faltasMaximas ) {
+        } else if(nota < media && faltas <= faltasMaximas ) {
 
-            document.write('<h2>Infelizmente '+ nomeAluno +' foi reprovado por '+ (media - nota) +' pontos</h2>')
+            document.getElementById('texto').textContent =('Infelizmente '+ nomeAluno +' foi reprovado por '+ (media - nota) +' pontos')
 
         }
         else {
 
-            document.write('<h2>'+ nomeAluno +' provavelmente desistiu pois reprovou por nota e falta</h2>')
+            document.getElementById('texto').textContent =(''+ nomeAluno +' provavelmente desistiu pois reprovou por nota e falta')
 
         }
     }else {
@@ -70,9 +71,6 @@ if (turma  == 'xt') {
 }else {
     alert('turma não encontrada ou invalida')
 }
-
-var resultado  = (nota >= media && faltas <= faltasMaximas) ? 'Aprovado' : 'reprovado'
-document.write(resultado)
 
 
 function displayTime() {
